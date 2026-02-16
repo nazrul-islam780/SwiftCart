@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SwiftCart | Products</title>
     <link rel="stylesheet" href="../Styles/styles.css">
+    <link rel="shortcut icon" href="https://www.google.com/url?sa=t&source=web&rct=j&url=https%3A%2F%2Fwww.vectorstock.com%2Froyalty-free-vectors%2Fsc-icon-vectors&ved=0CBUQjRxqFwoTCOjc_9HB3pIDFQAAAAAdAAAAABAH&opi=89978449" type="image/x-icon">
     <!-- Tailwind and DaisyUI CDN -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
@@ -22,7 +23,7 @@
 
 <body>
     <header class="">
-        <div class="navbar px-8 md:px-32 py-6 bg-base-100 shadow-sm">
+        <div class="navbar px-4 md:px-32 py-6 bg-base-100 shadow-sm">
             <div class="navbar-start">
                 <div class="dropdown">
                     <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
@@ -56,99 +57,41 @@
         </div>
     </header>
 
-    
 
 
-
-        <!-- <section class="px-4 md:px-36 my-5">
-            <h2 class="text-3xl font-bold text-left mb-6 mt-14">Trending Now</h2>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
-                <div class="w-auto  border-1 border-gray-100 rounded-lg">
-                    <div class="bg-[#E6E7EB] rounded-t-lg py-4">
-                        <img class="w-auto mx-auto h-[300px]"
-                            src="https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_t.png" alt="">
-                    </div>
-                    <div class="py-4 px-6">
-                        <div class="flex justify-between pb-3">
-                            <span class="badge bg-[#E0E7FF] text-primary rounded-xl">Men's Clothing</span>
-                            <span><i class="fa-solid fa-star text-yellow-500"></i> 3.9 (120)</span>
-                        </div>
-                        <h2 class="text-xl text-left font-semibold">Mens Cotton Jacket</h2>
-                        <div class="price text-xl font-bold pt-2">
-                            <span>$55.99</span>
-                        </div>
-                        <div class="flex justify-between gap-3 mt-4">
-                            <button class="btn btn-ghost border-1 border-[#e0e7ff] w-1/2 rounded-lg"><i
-                                    class="fa-regular fa-eye"></i> Details</button>
-                            <button class="btn btn-primary w-1/2 rounded-lg"><i class="fa-solid fa-cart-shopping"></i>
-                                Add</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="w-auto  border-1 border-gray-100 rounded-lg">
-                    <div class="bg-[#E6E7EB] rounded-t-lg py-4">
-                        <img class="w-auto mx-auto h-[300px]"
-                            src="https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_t.png" alt="">
-                    </div>
-                    <div class="py-4 px-6">
-                        <div class="flex justify-between pb-3">
-                            <span class="badge bg-[#E0E7FF] text-primary rounded-xl">Men's Clothing</span>
-                            <span><i class="fa-solid fa-star text-yellow-500"></i> 3.9 (120)</span>
-                        </div>
-                        <h2 class="text-xl text-left font-semibold">Mens Cotton Jacket</h2>
-                        <div class="price text-xl font-bold pt-2">
-                            <span>$55.99</span>
-                        </div>
-                        <div class="flex justify-between gap-3 mt-4">
-                            <button class="btn btn-ghost border-1 border-[#e0e7ff] w-1/2 rounded-lg"><i
-                                    class="fa-regular fa-eye"></i> Details</button>
-                            <button class="btn btn-primary w-1/2 rounded-lg"><i class="fa-solid fa-cart-shopping"></i>
-                                Add</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="w-auto  border-1 border-gray-100 rounded-lg">
-                    <div class="bg-[#E6E7EB] rounded-t-lg py-4">
-                        <img class="w-auto mx-auto h-[300px]"
-                            src="https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_t.png" alt="">
-                    </div>
-                    <div class="py-4 px-6">
-                        <div class="flex justify-between pb-3">
-                            <span class="badge bg-[#E0E7FF] text-primary rounded-xl">Men's Clothing</span>
-                            <span><i class="fa-solid fa-star text-yellow-500"></i> 3.9 (120)</span>
-                        </div>
-                        <h2 class="text-xl text-left font-semibold">Mens Cotton Jacket</h2>
-                        <div class="price text-xl font-bold pt-2">
-                            <span>$55.99</span>
-                        </div>
-                        <div class="flex justify-between gap-3 mt-4">
-                            <button class="btn btn-ghost border-1 border-[#e0e7ff] w-1/2 rounded-lg"><i
-                                    class="fa-regular fa-eye"></i> Details</button>
-                            <button class="btn btn-primary w-1/2 rounded-lg"><i class="fa-solid fa-cart-shopping"></i>
-                                Add</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section> -->
-    
-
-    <main class="px-36">
+    <main class="px-4 md:px-36">
 
         <section>
             <h2 class="text-3xl font-bold text-center my-8">Our Products</h2>
             <div class="flex justify-center gap-4">
-                <button class="btn btn-outline hover:bg-primary hover:text-white hover:border-transparent rounded-full">All</button>
-                <div id="category-container" class="flex gap-4">
+                <button
+                    class="btn btn-outline hover:bg-primary hover:text-white hover:border-transparent rounded-full">All</button>
+                <div id="category-container" class="grid grid-cols-3 md:flex gap-4">
 
                 </div>
             </div>
         </section>
 
         <section id="productsContainer" class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-10 mt-8">
-            
+
+        </section>
+
+        <section>
+            <!-- Open the modal using ID.showModal() method -->
+            <!-- <button class="btn" onclick="">open modal</button> -->
+            <dialog id="product_modal" class="modal">
+                <div id="product-details"
+                    class="modal-box flex flex-col md:flex-row bg-white rounded-lg shadow-lg max-w-3xl mx-auto p-6 gap-6">
+
+                </div>
+
+                <form method="dialog" class="modal-backdrop">
+                    <button>close</button>
+                </form>
+            </dialog>
         </section>
     </main>
+
 
     <script src="../Scripts/script.js"></script>
 </body>
