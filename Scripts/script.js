@@ -33,11 +33,11 @@ const loadProductDetails = (id) => {
 
 const displayProductDetails = (data) => {
     const productDetails = document.getElementById('product-details')
-    productDetails.innerHTML = `<div class="w-full md:w-1/2 flex  p-4 justify-between gap-4 items-center">
+    productDetails.innerHTML = `<div class="w-full md:w-1/2 flex  p-4 justify-between gap-4 items-start">
                         <img src="${data.image}" alt="Fjallraven Backpack"
-                            class="w-full h-full object-contain rounded-lg">
+                            class="w-full p-10 bg-[#E6E7EB] object-contain rounded-lg">
                     </div>
-                    <div class="w-full md:w-1/2 flex flex-col py-12  ">
+                    <div class="w-full md:w-1/2 flex flex-col pb-12 pt-4  ">
 
                         <span class="badge bg-[#E0E7FF] text-primary rounded-xl">${data.category}</span>
                         <h2 class="text-3xl font-bold mt-3 mb-3"
@@ -47,7 +47,7 @@ const displayProductDetails = (data) => {
                         <p class="text-primary font-bold text-lg mb-3">$${data.price}</p>
                         <span><i class="fa-solid fa-star text-yellow-500"></i> ${data.rating.rate}
                             (${data.rating.count})</span>
-                        <p class="text-gray-600 text-lg mb-4 line-clamp-5 mt-4" title="${data.description}">
+                        <p class="text-gray-600 text-lg mb-4 mt-4">
                             ${data.description}
                         </p>
                         <div class="flex flex-col sm:flex-row gap-3 mt-8">
@@ -75,7 +75,7 @@ const displayProductsByCategory = (products) => {
                         <span class="badge bg-[#E0E7FF] text-primary rounded-xl">${product.category}</span>
                         <span><i class="fa-solid fa-star text-yellow-500"></i> ${product.rating.rate} (${product.rating.count})</span>
                     </div>
-                    <h2 class="text-xl text-left font-semibold">${product.title}</h2>
+                    <h2 class="text-xl text-left font-semibold truncate">${product.title}</h2>
                     <div class="price text-xl font-bold pt-2">
                         <span>$${product.price}</span>
                     </div>
